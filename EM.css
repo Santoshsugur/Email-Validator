@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font: bolder;
+}
+
+.logo{
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: grey;
+}
+
+main{
+    min-height: 85vh;
+    padding: 20px;
+}
+.container{
+    max-width: 80vh;
+    margin: auto;
+    padding: 10px 20px;
+}
+.container h1{
+    padding: 12px 0;
+}
+input[type='text']{
+    padding: 3px 12px;
+    width: 100%;
+    border: 2px solid rgb(46, 44, 44);
+    border-radius: 5px;
+    font-style: 20px;
+}
+#resultCont div::first-letter{
+    text-transform:uppercase ;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 7px;
+    font-size: smaller;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size:small;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo img{
+        width: 20px;
+        height: 20px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+}

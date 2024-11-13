@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EValidate-Email Validator</title>
+    <link rel="stylesheet" href="EM.css">
+    <link rel="icon" type="image/x-icon" href="reshot-icon-email-S2C7DXKAG6.svg" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="reshot-icon-email-S2C7DXKAG6.svg" alt="">
+                <span>EValidate</span></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Enter your Email to Validate</h1>
+            <form action="/submit" method="post">
+                <!-- Text input for username -->
+                <label for="username">Email:</label>
+                <input placeholder="example@gmail.com" type="text" id="username" name="username" required pattern="[a-z0-9_.]+@[a-z]+.[a-z]{2,}">
+                <br><br>
+            
+                <!-- Submit button -->
+                <input id="submitBtm" class="btn" type="submit" value="Submit">
+              </form>
+        </div>
+
+        <div class="container">
+            <h2>Your Results </h2>
+            <div id="resultCont">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Coprights &nbsp;&nbsp;|&nbsp;&nbsp; EValidate.com&nbsp;&nbsp;|&nbsp;&nbsp; All Rights Reserved
+    </footer>
+
+    <script src="Em.js"></script>
+</body>
+</html>
